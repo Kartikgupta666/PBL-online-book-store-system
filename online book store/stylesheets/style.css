@@ -298,7 +298,31 @@ p{
     counter-increment: carousel-cell;
     
   }
+  /* carousel BOOKS */
+.books-slider
+{
+    background-color: #fff;
+}
+
+.cell {
+    /* padding: 10px; */
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    margin-right: 20px;
+    /* background-image: linear-gradient(to top right , purple , pink ); */
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all 0.4s;
+    
+  }
   
+  .cell.is-selected {
+    background: #ED2;
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+  }
 /*media queries*/
 @media (max-width:991px){
     html{
