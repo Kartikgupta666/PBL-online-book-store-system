@@ -9,6 +9,7 @@
     --border1:1px solid rgba(0, 0, 0, 0.367);
     --border-hover:.1rem solid var(--black);
     --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    
 }
 *{
     font-family: 'Poppins', sans-serif;
@@ -25,6 +26,7 @@ html{
     overflow-x:hidden;
     scroll-padding-top: 5rem;
     scroll-behavior: smooth;
+    
 }
 html::-webkit-scrollbar{
     width: 1rem;
@@ -52,6 +54,29 @@ section{
 }
 .btn:hover{
     background: var(--dark-color);
+}
+.btn1{
+    margin-top: 0.1rem;
+    display: inline-block;
+    padding: .5rem 2rem;
+    border-radius: .2rem;
+    color: #fff;
+    background: var(--yellow);
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 350;
+    text-align: center;
+    width: 12%;
+    height: 40px;
+    margin-right: 8px;
+    background-image: linear-gradient(to top right , purple , pink );
+}
+.btn1:hover{
+    background: var(--dark-color);
+}
+.availabel-books{
+    padding: 80px;
+    width: 106%;
 }
 .header .header-1{
     background: #fff;
@@ -233,25 +258,106 @@ body{
     color: var(--black);
     cursor: pointer;
 }
-/* .home{
-    background: url(../images/12.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
-/* .home .row{
-    display: flex;
+/*
+registration form*/
+.registration-form-container{
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-} */
-/* .home .row .content{
-    flex: 1 1 42rem;
-} */
-/* .home .row .books-slider{
-    flex: 1 1 42rem;
+    justify-content: center;
+    background: rgba(255,255,255,.9);
+    position: fixed;
+    top: 20%;left:34%;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+}
+
+.registration-form-container form{
+    background: #fff;
+    border: var(--border);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem;
+}
+.registration-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
     text-align: center;
-    margin-top: 2rem;
-} */
+}
+.registration-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.registration-form-container form .box{
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+.registration-form-container form .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.registration-form-container form p a{
+    color: green;
+    text-decoration: underline;
+}
+/*
+forgot password form*/
+.forgot-password-container{
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.9);
+    position: fixed;
+    top: 20%;left:34%;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+}
+
+.forgot-password-container form{
+    background: #fff;
+    border: var(--border);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 2rem;
+}
+.forgot-password-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+.forgot-password-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.forgot-password-container form .box{
+    width: 100%;
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+}
+.forgot-password-container .btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
 .home .row .books-slider a img{
     height: 25rem;
 }
