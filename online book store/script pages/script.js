@@ -7,7 +7,7 @@ document.querySelector('#close-login-btn').onclick=()=>{
     loginForm.classList.remove('active');
 }
 
-
+// firebase database 
 const firebaseConfig = {
   apiKey: "AIzaSyCngmlr_8LOg5uSsFQ5JjyqIPLB49eQZHs",
   authDomain: "database-f8238.firebaseapp.com",
