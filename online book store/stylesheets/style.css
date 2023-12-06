@@ -432,6 +432,12 @@ p{
     background: #fff;
     border: var(--border);
 }
+/* wrapper class is the main class contain 4 boxes of ads */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+/* this is a small css for featured section ( Correction CSS )  */
 .featured .featured-slider .box{
     width: 25rem;
     margin: 2rem 0;
