@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--font-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <!-- croussel css link -->
+     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+     <!--custom css file link-->
+     <link rel="stylesheet" href="imagedisplay.css">
+    <title>Search</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-1">
+            <!--kivax logo-->
+            <a href="index.html" class="logo"><i class="fas fa-book"></i></fa-book>&nbsp;KivaX</a>
+            <form action="" class="search-form">
+                <!--input box in search baar-->
+                <input type="text" placeholder="search here" id="bookName">
+                <label for="search-box" onclick="searchImg()" class="fas fa-search"></label>
+            </form>
+            <div class="icons">
+                <a href="wishlist.html" class="fas fa-heart"></a>
+                <a href="cart.html" class="fas fa-shopping-cart"></a>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="heading"><span>BOOK DETAILS</span></h1>
+            <div id="imgContainer"></div>
+          </div>
+          <script src="image.js"></script>
+</body>
+</html>
